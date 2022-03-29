@@ -1,0 +1,116 @@
+.skewed-header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.about-header-bg {
+    background-image: url(about-us.jpeg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    filter: brightness(50%);
+}
+
+.skewed-header-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.skewed-header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #cbcbcb;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-links a:hover {
+    color: tan;
+    letter-spacing: 2px;
+}
+
+.heading-wrapper {
+    background: tan;
+    color: #11122b;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5px; 
+    width: 175px;
+    text-align: center;
+}
+
+.about-content-container {
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper {
+    width: 1000px;
+}
+
+.content-wrapper p {
+    line-height: 30px;
+}
+
+.content-wrapper img {
+    height: 250px;
+    float: left;
+    margin: 20px;
+}
+
+#chef {
+    border: 1px solid tan;
+}
+
+.squares-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.squares-grid {
+    width: 1000px;
+}
+
+.square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.square img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.square-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+}
+
+.square-text h1 {
+    color: tan;
+}
+
+.spacer60 {
+    height: 60px;
+    width: 100%;
+}
